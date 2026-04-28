@@ -351,7 +351,7 @@ def main() -> None:
     )
 
     load_runtime_secrets()
-    default_env = Path(__file__).resolve().parents[1] / ".env"
+    default_env = Path(__file__).resolve().parent / ".env"
     load_env_file(default_env)
 
     if "location_postal_inputs" not in st.session_state:

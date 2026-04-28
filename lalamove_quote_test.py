@@ -156,7 +156,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--schedule-at", default="")
     parser.add_argument(
         "--env-file",
-        default=str(Path(__file__).resolve().parents[1] / ".env"),
+        default=str(Path(__file__).resolve().parent / ".env"),
         help="Path to .env file containing LALAMOVE_APIKEY and LALAMOVE_SECRETKEY",
     )
     return parser.parse_args()
